@@ -49,19 +49,19 @@ function App() {
 
   return (
     <div className="py-6 px-6 font-Inter text-main bg-white w-screen h-screen flex flex-col justify-center items-center text-dark-blue">
-      <img className="absolute top-12 left-5 w-[90%]" src="/images/pattern-bg.svg" alt="Background Pattrn" />
-      <img className="absolute object-cover rounded-lg shadow-xl w-72 h-72 top-20 left-[60px]" src={testimonials[Change].image} alt={testimonials[Change].name} />
-      <div className="flex absolute top-[350px]">
-        <button onClick={prevOne} className="p-4 shadow-lg bg-white rounded-tl-full rounded-bl-full hover:bg-dark-blue transition">
+      <img className="absolute top-12 left-5 w-[90%] lg:w-[750px] lg:top-[50px] lg:left-[950px]" src="/images/pattern-bg.svg" alt="Background Pattrn" />
+      <img className="absolute object-cover rounded-lg shadow-xl w-72 h-72 top-20 left-[60px] lg:w-[550px] lg:shadow-2xl lg:top-[150px] lg:left-[1100px] lg:h-[550px]" src={testimonials[Change].image} alt={testimonials[Change].name} />
+      <div className="flex absolute top-[350px] lg:left-[1150px] lg:top-[665px]">
+        <button onClick={prevOne} className="lg:p-6 lg:shadow-sm p-4 shadow-lg bg-white rounded-tl-full rounded-bl-full hover:bg-dark-blue transition">
           <img src="/images/icon-prev.svg" alt="Icon Prev" />
         </button>
-        <button onClick={nextOne} className="p-4 shadow-lg bg-white hover:bg-dark-blue transition rounded-tr-full rounded-br-full">
+        <button onClick={nextOne} className="lg:p-6 lg:shadow-sm p-4 shadow-lg bg-white hover:bg-dark-blue transition rounded-tr-full rounded-br-full">
           <img src="/images/icon-next.svg" alt="Icon Next" />
         </button>
       </div>
-      <img className="absolute top-[450px] w-[15%]" src="/images/pattern-quotes.svg" alt="Pattern Quotes" />
-      <div className="flex flex-col justify-center items-center absolute top-[460px]">
-        <p className="text-2xl px-6 text-center font-light">{`"${testimonials[Change].testimonial}"`}</p>
+      <img className="absolute top-[450px] w-[15%] lg:w-[10%] lg:top-[250px] lg:left-[300px]" src="/images/pattern-quotes.svg" alt="Pattern Quotes" />
+      <div className="flex flex-col justify-center items-center lg:items-start absolute top-[460px] lg:px-[600px] lg:top-[280px] lg:left-[-300px]">
+        <p className="text-2xl px-6 text-center font-light lg:text-5xl lg:text-left">{`"${testimonials[Change].testimonial}"`}</p>
         <h2 className="font-bold text-2xl mt-6 z-30">{testimonials[Change].name}</h2>
         <h3 className="font-medium text-grayish-blue text-xl z-30 mt-1">{testimonials[Change].position}</h3>
       </div>
