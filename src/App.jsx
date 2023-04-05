@@ -3,13 +3,13 @@ import { useState } from "react"
 function App() {
   let testimonials = [
     {
-      image: '/public/images/image-tanya.jpg',
+      image: '/images/image-tanya.jpg',
       name: 'Tanya Sinclair',
       position: 'UX Engineer',
       testimonial: "I've been interested in coding for a while but never taken the jump, untill now. I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about the future",
     },
     {
-      image: '/public/images/image-john.jpg',
+      image: '/images/image-john.jpg',
       name: 'John Tarkpor',
       position: 'Jr Front-end Developer',
       testimonial: "If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting as a professional developer",
@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="py-6 px-6 font-Inter text-main bg-white w-screen h-screen flex flex-col justify-center items-center text-dark-blue">
-      <img className="absolute top-12 left-5 w-[90%]" src="/public/images/pattern-bg.svg" alt="Background Pattrn" />
+      <img className="absolute top-12 left-5 w-[90%]" src="/images/pattern-bg.svg" alt="Background Pattrn" />
       <img className="absolute object-cover rounded-lg shadow-xl w-72 h-72 top-20 left-[60px]" src={testimonials[Change].image} alt={testimonials[Change].name} />
       <div className="flex absolute top-[350px]">
         <button onClick={prevOne} className="p-4 shadow-lg bg-white rounded-tl-full rounded-bl-full hover:bg-dark-blue transition">
